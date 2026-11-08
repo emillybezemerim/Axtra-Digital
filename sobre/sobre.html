@@ -6,23 +6,25 @@
     <meta name="Author" content="Emilly Bez Emerim">
     <meta name="Author" content="Maria Clara Flores Steckert">
     <meta name="Author" content="Taina Citadin">
-    <meta name="Description" content="Axtra digital é uma empresa de marketing digital que cria conteúdos personalizados de forma orgânica.">
+    <meta name="Description" content="Conheça a Axtra Estratégias Digitais: nossa história, missão, visão, valores e o que nos torna diferentes.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/sobre.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link href="../img/icon.png" rel="icon" type="image/png">
+
     <title>Sobre - Axtra Digital</title>
 </head>
 <body>
-      <header>
+    <header>
         <nav>
-            <img src="../img/logo_axtra.PNG" alt="logomarca" width="180px">
+            <img src="../img/logo_axtra.PNG" alt="logomarca" id="logo">
             <ul>
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="sobre.html" class="ativo">Sobre</a></li>
                 <li><a href="../portfolio/portfolio.html">Portfólio</a></li>
                 <li><a href="../horarios/horarios.html">Horários</a></li>
                 <li><a href="#contatos">Contatos</a></li>
@@ -30,16 +32,124 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Sobre a Axtra</h2>
+        <!-- Apresentação -->
+        <section class="sobre-hero">
+            <article>
+                <h1>Sobre a Axtra</h1>
+                <img src="../img/yellowline.png" alt="" class="sobre-linha">
+                <p>A <strong>Axtra Estratégias Digitais</strong> cria conteúdo estratégico para e-commerces, fabricantes e prestadores de serviço, com tom humano e sem roteiros engessados.</p>
+                <p>Somos a cara da empresa para quem não tem ninguém para isso.</p>
+            </article>
+            <figure>
+                <img src="../img/sobre-gravacao.jpg" alt="Gravação de vídeo da Axtra vista pela tela do celular, com a apresentadora sorrindo diante da câmera" class="sobre-foto">
+            </figure>
+        </section>
+
+        <!-- História -->
+        <section class="sobre-historia">
+            <article class="sobre-historia-texto">
+                <h2>Nossa história</h2>
+                <p>A Axtra nasceu da experiência da Camily com o marketing. Ela trabalhava em uma loja de cosméticos, onde sempre cuidava da parte de marketing.</p>
+                <p>Foi ali que ela descobriu que gostava de criar conteúdo e de trabalhar com marketing digital. A partir disso, começou a produzir vídeos de forma terceirizada para empresas da região.</p>
+            </article>
+            <div class="sobre-fatos">
+                <article class="sobre-fato">
+                    <h3>Sede</h3>
+                    <p>Santa Rosa do Sul (SC)</p>
+                </article>
+                <article class="sobre-fato">
+                    <h3>Gravação</h3>
+                    <p>Vamos até a empresa, na região ou em outras cidades, para captar o conteúdo.</p>
+                </article>
+                <article class="sobre-fato">
+                    <h3>Edição</h3>
+                    <p>Feita em Santa Rosa do Sul.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Missão, visão e valores -->
+        <section class="sobre-proposito">
+            <h2>Missão, visão e valores</h2>
+
+            <div class="sobre-mv">
+                <article class="sobre-mv-card">
+                    <h3>Missão</h3>
+                    <p>Transformar a imagem digital e o pensamento das pessoas em relação ao marketing, oferecendo estratégias criativas, personalizadas e realmente funcionais para alcançar resultados de verdade.</p>
+                </article>
+                <article class="sobre-mv-card">
+                    <h3>Visão</h3>
+                    <ul class="sobre-visao">
+                        <li>Tornar-se referência em marketing estratégico e humanizado na região.</li>
+                        <li>Ser reconhecida como uma agência que transforma negócios através da comunicação digital.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <h3 class="sobre-subtitulo">Nossos valores</h3>
+            <div class="sobre-valores">
+                <article class="sobre-valor">
+                    <h4>Transparência</h4>
+                    <p>Comunicação direta, sincera e sem ruídos.</p>
+                </article>
+                <article class="sobre-valor">
+                    <h4>Comprometimento</h4>
+                    <p>Cumprir o que foi combinado e honrar nossas responsabilidades.</p>
+                </article>
+                <article class="sobre-valor">
+                    <h4>Paixão pelo que fazemos</h4>
+                    <p>Trabalhar com dedicação, propósito e amor pelo nosso trabalho.</p>
+                </article>
+                <article class="sobre-valor">
+                    <h4>Mentalidade coletiva</h4>
+                    <p>Colocar o bem da empresa em primeiro lugar, valorizando e respeitando cada pessoa da equipe.</p>
+                </article>
+                <article class="sobre-valor">
+                    <h4>Criatividade e autenticidade</h4>
+                    <p>Pensar fora da caixa, inovar e manter nossa identidade.</p>
+                </article>
+                <article class="sobre-valor">
+                    <h4>Preocupação com a imagem</h4>
+                    <p>Cuidar da nossa imagem, postura e apresentação, entendendo que cada detalhe comunica.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Diferencial -->
+        <section class="sobre-diferencial">
+            <figure>
+                <img src="../img/sobre-bastidores.jpg" alt="Bastidores de uma produção da Axtra em estúdio, com equipamentos de iluminação" class="sobre-foto">
+            </figure>
+            <article>
+                <h2>Nós somos o rosto do seu produto.</h2>
+                <p>Muita gente produz conteúdo, mas deixa a gravação na mão do dono. Para quem precisa de vídeos com constância e não tem tempo nem facilidade de aparecer, a Axtra entrega conteúdo estratégico com a apresentação do produto feita por nós na gravação.</p>
+
+                <div class="sobre-destaque">
+                    <p class="sobre-destaque-numero">+141 mil</p>
+                    <p>visualizações ao mostrar os bastidores reais de uma fábrica de pantufas.</p>
+                </div>
+
+                <p>O resultado são clientes que percebem o valor da sua marca e entram em contato.</p>
+            </article>
+        </section>
+
+        <!-- Chamada para conversa (usa o estilo .cta da Home) -->
+        <section class="cta">
+            <article class="cta-texto">
+                <h2>Você sabe onde quer chegar, <br> eu te mostro como.</h2>
+                <p>Vamos conversar.</p>
+            </article>
+            <article class="cta-botao">
+                <a class="btn-whatsapp" href="https://wa.me/5548988781122?text=Ola%21%20Vim%20pelo%20site%20e%20quero%20conversar." target="_blank" rel="noopener noreferrer">Iniciar conversa no WhatsApp</a>
+            </article>
         </section>
     </main>
- <footer>
+    <footer>
         <section id="contatos">
-            <h3>Entre em contato conosco: </h3>
+            <h3>Entre em contato conosco:</h3>
             <ul>
-                <li><img src="../img/whatsapp.png" alt="WhatsApp" id="contatos-icon"><a href="https://wa.me/5548988781122?text=Ola%21%20Vim%20pelo%20site." target="_blank" rel="noopener noreferrer">WhatsApp: (48) 98878-1122</a></li>
-                <li><img src="../img/instagram.png" alt="Instagram" id="contatos-icon"><a href="https://www.instagram.com/axtradigital/" target="_blank" rel="noopener noreferrer">Instagram: @axtradigital_</a></li>
+                <li><img src="../img/whatsapp.png" alt="WhatsApp" class="contatos-icon"><a href="https://wa.me/5548988781122?text=Ola%21%20Vim%20pelo%20site." target="_blank" rel="noopener noreferrer">WhatsApp: (48) 98878-1122</a></li>
+                <li><img src="../img/instagram.png" alt="Instagram" class="contatos-icon"><a href="https://www.instagram.com/axtradigital/" target="_blank" rel="noopener noreferrer">Instagram: @axtradigital_</a></li>
             </ul>
         </section>
     </footer>
