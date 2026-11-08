@@ -2,22 +2,29 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-
+ 
     <meta name="Author" content="Emilly Bez Emerim">
     <meta name="Author" content="Maria Clara Flores Steckert">
     <meta name="Author" content="Taina Citadin">
     <meta name="Description" content="Axtra digital é uma empresa de marketing digital que cria conteúdos personalizados de forma orgânica.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ 
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="img/icon.png" rel="icon" type="image/x-icon">
+ 
+    <script src="js/script.js" defer></script>
+
     <title>Axtra Digital</title>
 </head>
 <body>
     <header>
         <nav>
-            <img src="img/logo_axtra.PNG" alt="logomarca" width="180px">
+            <img src="img/logo_axtra.PNG" alt="logomarca" id="logo">
             <ul>
-                <li><a href="#/">Home</a></li>
+                <li><a href="index.html" class="ativo">Home</a></li>
                 <li><a href="sobre/sobre.html">Sobre</a></li>
                 <li><a href="portfolio/portfolio.html">Portfólio</a></li>
                 <li><a href="horarios/horarios.html">Horários</a></li>
@@ -26,17 +33,103 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="secao-carrossel">
+            <article class="carrossel">
+                <button type="button" class="carrossel-seta anterior" id="btnVoltar" aria-label="Foto anterior">&#10094;</button>
+                <img id="moldura" src="img/1.jpg" alt="Equipe da Axtra Digital" class="carrossel-foto">
+                <button type="button" class="carrossel-seta proximo" id="btnAvancar" aria-label="Próxima foto">&#10095;</button>
+            </article>
+        </section>
+        <section class="sobre-axtra">
             <article id="sobre">
-                <h2>Você sabe onde quer chegar e eu te mostro!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus id urna vel varius.
-                Sed quis mi non neque viverra gravida. Pellentesque gravida iaculis nisi ac gravida. Ut fringilla
-                leo erat, quis tincidunt leo cursus sed. Pellentesque sed odio in lectus pretium vehicula. Integer posuere, mi nec varius venenatis, massa orci consectetur sapien, scelerisque viverra neque erat at nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur luctus dignissim posuere. Nam facilisis dapibus finibus.
+                <h2>Você sabe onde quer chegar, <br> eu te mostro como.</h2>
+ 
+                <img src="img/yellowline.png" alt="linha amarela" id="yellowline">
+ 
+                <p>Estratégia, criatividade e conteúdo para impulsionar marcas no digital. A Axtra desenvolve soluções estratégicas para e-commerces, fabricantes e prestadores de serviços, fortalecendo sua presença e conexão com o público.</p>
+            </article>
+            <article>
+                <img src="img/megafone.png" alt="megafone" id="megafone">
+            </article>
+        </section>
+        <section class="diferencial" id="diferencial">
+            <article>
+                <h2>Nosso diferencial</h2>
+                <ul>
+                    <li>Criação de conteúdo personalizado</li>
+                    <li>Produção de conteúdo orgânico</li>
+                    <li>Alguém para aparecer nos vídeos</li>
+                    <li>Transformar ideias respeitando a identidade da marca</li>
+                </ul>
+            </article>
+            <article id="autenticidade">
+                <h1>100%</h1>
+                <p>Autêntico, conhecemos o produto de perto, ouvimos quem está por trás da marca e damos voz ao público.</p>
+                <h1>184%</h1>
+                <p>de crescimento aos clientes da Axtra.</p>
+            </article>
+        </section>
+        <section class="pilares" id="como-trabalhamos">
+            <div class="intro-secao">
+                <h2>Conteúdo de verdade, do jeito Axtra</h2>
+                <p>Na Axtra, cada conteúdo nasce da conversa com a marca e do olhar atento para quem vai consumir. Sem fórmulas prontas e sem atalhos.</p>
+            </div>
+            <div class="grid-pilares">
+                <article class="pilar">
+                    <h3>Conteúdo autêntico</h3>
+                    <p>Criamos conteúdos autênticos, que refletem a identidade da marca e a voz de quem está por trás dela. Nada genérico: cada publicação tem a cara do seu negócio.</p>
+                </article>
+                <article class="pilar">
+                    <h3>Natural e orgânico</h3>
+                    <p>Nosso trabalho é 100% orgânico, sem tráfego pago. Construímos presença e confiança aos poucos, com conteúdo relevante que atrai o público de forma natural.</p>
+                </article>
+                <article class="pilar">
+                    <h3>Comunicação simples e transparente</h3>
+                    <p>Falamos de forma clara, sem jargões e sem promessas exageradas. Você acompanha cada etapa e entende o que estamos fazendo e por quê.</p>
+                </article>
+                <article class="pilar">
+                    <h3>Pesquisa de público</h3>
+                    <p>Antes de criar, pesquisamos o público da marca: o que ele busca, como fala e onde está. É isso que torna o conteúdo certeiro e próximo.</p>
+                </article>
+            </div>
+        </section>
+        <section class="equipe" id="equipe">
+            <div class="intro-secao">
+                <h2>Nossa equipe</h2>
+                <p>Conheça quem está por trás dos conteúdos da Axtra.</p>
+            </div>
+    
+            <div class="grid-equipe">
+                <article class="membro">
+                    <img src="img/camilyperfil.png" alt="Foto de Camily - fundadora e diretora de estratégia e criação">
+                    <h3>Camily</h3>
+                    <p class="cargo">Fundadora e diretora de estratégia e criação</p>
+                </article>
+                <article class="membro">
+                    <img src="img/saymonperfil.png" alt="Foto de Saymon - Videomaker e diretor de Produção">
+                    <h3>Saymon</h3>
+                    <p class="cargo">Videomaker e diretor de produção audiovisual</p>
+                </article>
+            </div>
+        </section>
+        <section class="cta" id="conversar">
+            <article class="cta-texto">
+                <h2>Você sabe onde quer chegar, <br> eu te mostro como.</h2>
+                <p>Conte para a gente qual é o seu objetivo. Em uma conversa, entendemos o seu negócio e mostramos como o conteúdo orgânico pode levar a sua marca até lá.</p>
+            </article>
+            <article class="cta-botao">
+                <a class="btn-whatsapp" href="https://wa.me/5548988781122?text=Ola%21%20Vim%20pelo%20site%20e%20quero%20conversar." target="_blank" rel="noopener noreferrer">Iniciar conversa no WhatsApp</a>
+            </article>
         </section>
     </main>
     <footer>
-
+        <section id="contatos">
+            <h3>Entre em contato conosco:</h3>
+            <ul>
+                <li><img src="img/whatsapp.png" alt="WhatsApp" class="contatos-icon"><a href="https://wa.me/5548988781122?text=Ola%21%20Vim%20pelo%20site." target="_blank" rel="noopener noreferrer">WhatsApp: (48) 98878-1122</a></li>
+                <li><img src="img/instagram.png" alt="Instagram" class="contatos-icon"><a href="https://www.instagram.com/axtradigital/" target="_blank" rel="noopener noreferrer">Instagram: @axtradigital_</a></li>
+            </ul>
+        </section>
     </footer>
-    
 </body>
 </html>
