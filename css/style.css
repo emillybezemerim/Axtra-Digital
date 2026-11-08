@@ -57,32 +57,50 @@ li {
     font-family: "Poppins", sans-serif;
 }
  
-nav {
+/* ----- menu principal ----- */
+
+header {
+    width: 100%;
+    background: #fff6de;
+}
+
+header nav {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background: #fff6de;
-    padding: 0;
+    padding: 0 5%;
 }
- 
-nav ul {
-    justify-content: center;
+
+header nav ul {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
-    padding: 30px;
+    padding: 20px 0;
     margin: 0;
     font-weight: 600;
 }
- 
-nav a:hover,
-nav a.ativo {
+
+header nav a {
+    color: #080705;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover,
+header nav a.ativo {
+    color: #f3c81a;
     border-bottom: 3px solid #f3c81a;
 }
- 
+
 #logo {
     width: 180px;
+    height: auto;
 }
  
 footer {
@@ -100,6 +118,8 @@ footer {
  
 .contatos-icon {
     width: 20px;
+    height: 20px;
+    object-fit: contain;
     margin-right: 5px;
     margin-bottom: -5px;
 }
@@ -349,6 +369,7 @@ main section.secao-carrossel {
     .grid-pilares {
         grid-template-columns: repeat(2, 1fr);
     }
+    
     main section.secao-carrossel {
         height: 260px;
     }
@@ -364,16 +385,6 @@ main section.secao-carrossel {
  
     .carrossel-seta.proximo {
         right: 10px;
-    }
- 
-    nav {
-        flex-direction: column;
-    }
- 
-    nav ul {
-        flex-wrap: wrap;
-        gap: 15px;
-        padding: 15px;
     }
  
     main section {
@@ -434,16 +445,6 @@ main section.secao-carrossel {
         right: 10px;
     }
  
-    nav {
-        flex-direction: column;
-    }
- 
-    nav ul {
-        flex-wrap: wrap;
-        gap: 15px;
-        padding: 15px;
-    }
- 
     main section {
         grid-template-columns: 1fr;
         height: auto;
@@ -479,5 +480,140 @@ main section.secao-carrossel {
     .grid-pilares,
     .grid-equipe {
         grid-template-columns: 1fr;
+    }
+}
+
+/*----- footer -----*/
+
+.contatos-icon{
+    width: 20px;
+    height: 20px;
+}
+
+address{
+    font-style: normal;
+}
+
+#contatos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0 10px;
+}
+
+#contatos > *{
+    flex: 1 1 200px;
+}
+
+#contatos h3{
+    text-align: left;
+    margin: 0 0 15px;
+    font-size: 18px;
+    color: #f5c91c;
+}
+
+#contatos ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: block;
+}
+
+#contatos nav{
+    display: block;
+    background-color: transparent;
+    padding: 0;
+}
+
+#contatos li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: #fff;
+    width: auto;
+}
+
+#contatos address li{
+    color: #888;
+}
+
+#contatos address a{
+    color: #888;
+}
+
+#contatos a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo{
+    max-width: 250px;
+}
+
+.menu a{
+    color: #888;
+}
+
+.menu .ativo{
+    color: #f5c91c;
+}
+
+.redes a{
+    color: #888;
+}
+
+.redes .ativo{
+    color: #f5c91c;
+}
+
+#contatos .menu a,
+#contatos .redes a{
+    color: #888;
+}
+
+#contatos .menu .ativo,
+#contatos .redes .ativo{
+    color: #f5c91c;
+}
+
+nav a:hover,
+nav a.ativo,
+#contatos address a:hover {
+    border-bottom: 3px solid #f3c81a;
+}
+
+header nav a.ativo{
+    color: #f5c91c;
+    font-weight: 700;
+}
+
+/* ---- footer tablet ---- */
+@media (max-width: 1000px) {
+    #contatos {
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr;
+        gap: 30px;
+        width: 90%;
+    }
+
+    #contatos > .logo {
+        grid-column: 1 / -1;
+    }
+}
+
+/* ---- footer celular ---- */
+@media (max-width: 800px) {
+    #contatos {
+        grid-template-columns: 1fr;
+        padding: 30px 0 10px;
+    }
+
+    #contatos > .logo {
+        max-width: 180px;
     }
 }

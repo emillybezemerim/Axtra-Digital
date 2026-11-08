@@ -1,0 +1,273 @@
+/* ==========================================================
+   Página Sobre - estilos específicos
+   Este arquivo só é carregado na página Sobre (sobre.html),
+   depois do style.css. Por isso ele não muda as outras páginas.
+   Cores: #080705 (preto), #f3c81a (amarelo), #fff6de (creme)
+   ========================================================== */
+
+/* ---------- Ajustes gerais ---------- */
+
+/* Tira o recuo de 20px que o style.css coloca em todo h2 e p */
+main h2,
+main p {
+    padding-left: 0;
+}
+
+main h2 {
+    margin: 0 0 20px;
+}
+
+main p {
+    font-size: 17px;
+}
+
+figure {
+    margin: 0;
+}
+
+/* O style.css deixa toda seção com 600px de altura.
+   Aqui as seções da Sobre ficam com a altura do conteúdo. */
+.sobre-hero,
+.sobre-historia,
+.sobre-proposito,
+.sobre-diferencial {
+    height: auto;
+    padding: 90px 10%;
+    gap: 60px;
+}
+
+/* Fotos da página */
+.sobre-foto {
+    display: block;
+    width: 100%;
+    height: 460px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 16px 16px 0 #f3c81a;
+}
+
+/* ---------- 1. Apresentação ---------- */
+
+.sobre-hero h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+    color: #f3c81a;
+    margin: 0;
+}
+
+.sobre-linha {
+    display: block;
+    width: 100px;
+    margin: 24px 0;
+}
+
+.sobre-hero strong {
+    color: #f3c81a;
+}
+
+/* ---------- 2. Nossa história ---------- */
+
+.sobre-historia {
+    background: #fff6de;
+}
+
+.sobre-historia-texto h2,
+.sobre-historia-texto p {
+    color: #080705;
+}
+
+.sobre-fato {
+    background: #080705;
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+}
+
+.sobre-fato h3 {
+    margin: 0 0 4px;
+}
+
+.sobre-fato p {
+    margin: 0;
+}
+
+/* ---------- 3. Missão, visão e valores ---------- */
+
+.sobre-proposito {
+    display: block;
+    background: #f3c81a;
+}
+
+.sobre-proposito h2,
+.sobre-subtitulo {
+    color: #080705;
+}
+
+.sobre-mv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin: 40px 0 60px;
+}
+
+.sobre-mv-card {
+    background: #080705;
+    border-radius: 10px;
+    padding: 32px;
+}
+
+.sobre-mv-card h3 {
+    font-size: 24px;
+    margin: 0 0 14px;
+}
+
+.sobre-mv-card p {
+    margin: 0;
+}
+
+.sobre-visao {
+    padding: 0;
+    margin: 0;
+}
+
+.sobre-visao li {
+    color: #fff6de;
+    font-size: 17px;
+    border-left: 3px solid #f3c81a;
+    padding-left: 14px;
+    margin-bottom: 14px;
+}
+
+.sobre-subtitulo {
+    font-size: 22px;
+    margin: 0 0 24px;
+}
+
+.sobre-valores {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.sobre-valor {
+    border: 2px solid #080705;
+    border-radius: 10px;
+    padding: 28px;
+}
+
+.sobre-valor h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 19px;
+    color: #080705;
+    margin: 0 0 10px;
+}
+
+.sobre-valor p {
+    color: #080705;
+    margin: 0;
+}
+
+/* ---------- 4. Diferencial ---------- */
+
+.sobre-destaque {
+    background: #f3c81a;
+    border-radius: 10px;
+    padding: 28px 32px;
+    margin: 28px 0;
+}
+
+.sobre-destaque p {
+    color: #080705;
+    margin: 0;
+}
+
+.sobre-destaque-numero {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 56px;
+}
+
+/* ---------- 5. Chamada final (.cta vem do style.css) ---------- */
+
+main section.cta {
+    padding: 90px 10%;
+}
+
+main section.cta h2 {
+    font-size: 34px;
+}
+
+.cta-texto p {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 26px;
+    border-bottom: 4px solid #f3c81a;
+    margin: 0;
+}
+
+/* ==========================================================
+   Responsividade - mesmos pontos de quebra do style.css
+   ========================================================== */
+
+/* Tablets */
+@media (max-width: 1000px) {
+    .sobre-hero,
+    .sobre-historia,
+    .sobre-proposito,
+    .sobre-diferencial,
+    main section.cta {
+        padding: 64px 6%;
+    }
+
+    .sobre-hero h1 {
+        font-size: 40px;
+    }
+
+    .sobre-foto {
+        height: 380px;
+    }
+
+    .sobre-valores {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main section.cta h2 {
+        font-size: 28px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 800px) {
+    .sobre-hero,
+    .sobre-historia,
+    .sobre-proposito,
+    .sobre-diferencial,
+    main section.cta {
+        padding: 48px 20px;
+    }
+
+    .sobre-hero h1 {
+        font-size: 32px;
+    }
+
+    .sobre-foto {
+        height: 300px;
+        box-shadow: 10px 10px 0 #f3c81a;
+    }
+
+    .sobre-mv,
+    .sobre-valores {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-destaque-numero {
+        font-size: 44px;
+    }
+
+    .cta-texto p {
+        font-size: 22px;
+    }
+}
