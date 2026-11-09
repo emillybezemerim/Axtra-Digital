@@ -337,6 +337,23 @@ main section.feedbacks {
 
 @media (max-width: 600px) {
 
+    nav {
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 10px 16px;
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    #logo {
+        width: 125px;
+    }
+
     h2 {
         font-size: 29px;
         padding-left: 0;

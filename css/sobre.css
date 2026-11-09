@@ -241,6 +241,24 @@ main section.cta h2 {
 
 /* Celulares */
 @media (max-width: 800px) {
+
+    nav {
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 10px 16px;
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    #logo {
+        width: 125px;
+    }
+
     .sobre-hero,
     .sobre-historia,
     .sobre-proposito,
