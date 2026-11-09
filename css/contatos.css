@@ -1,3 +1,9 @@
+/* ==========================================================
+   Página Contatos - estilos específicos
+   Este arquivo organiza os estilos da página de Contatos.
+   Cores: #080705 (preto), #f3c81a (amarelo), #fff6de (creme)
+   ========================================================== */
+
 /* ---- bloco preto ---- */
 
 .banner-contatos{
@@ -57,7 +63,7 @@
     margin: 0;
     padding-left: 0;
     max-width: 450px;
-    color: #fff;
+    color: #fff6de;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
 }
@@ -70,7 +76,7 @@
     padding-bottom: 80px;
     height: auto;
     background-color: #f3c81a;
-    border-radius: 40px 40px 40px 40px;
+    border-radius: 40px 40px 0 0;
     align-items: stretch;
 }
 
@@ -188,11 +194,44 @@
     padding-left: 0;
 }
 
+/* ---- tablet ---- */
+
+@media (max-width: 1000px){
+    .banner-contatos{
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 48px 20px;
+    grid-template-rows: none;
+    }
+
+    .banner-contatos h2,
+    .banner-contatos p,
+    #celular{
+        grid-column: 1;
+    }
+
+    .banner-contatos p{
+        width: 100%;
+        max-width: none;
+        text-align: left;
+    }
+    #celular{
+        grid-row: auto;
+        width: 220px;
+        margin: 24px auto 0;
+    }
+
+    .pagina-contato{
+        padding: 48px 20px;
+    }
+}
+
 /* ---- celular ---- */
 
 @media (max-width: 800px){
     .banner-contatos{
         grid-template-columns: 1fr;
+        min-height: auto;
         padding: 48px 20px;
         grid-template-rows: none;
     }
@@ -201,6 +240,12 @@
     .banner-contatos p,
     #celular{
         grid-column: 1;
+    }
+
+    .banner-contatos p{
+        width: 100%;
+        max-width: none;
+        text-align: left;
     }
 
     #celular{
@@ -212,4 +257,33 @@
     .pagina-contato{
         padding: 48px 20px;
     }
+
+    #logo {
+        width: 125px;
+}
+
+    nav {
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+}
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px 0;
+        flex-wrap: nowrap;
+}
+
+    nav a {
+        font-size: 13px;
+        white-space: nowrap;
+}
+
+    .banner-contatos h1{
+        font-size: 32px;
+}
+
 }
