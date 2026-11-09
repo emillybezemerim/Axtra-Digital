@@ -665,3 +665,21 @@ header nav a.ativo{
         font-size: 25px;
     }
 }
+
+/* ---- menu no celular ---- */
+/* No celular, o menu ao lado do logo não tinha espaço e o "Contatos"
+   descia para outra linha. Aqui o logo fica em cima e o menu embaixo,
+   usando a largura toda da tela. Usa "header nav" (e não só "nav")
+   para ter o mesmo peso das regras do menu principal lá em cima. */
+
+@media (max-width: 600px) {
+    header nav {
+        flex-direction: column;
+        padding: 12px 5% 0;
+    }
+
+    header nav ul {
+        gap: 10px 18px;
+        padding: 10px 0 14px;
+    }
+}
