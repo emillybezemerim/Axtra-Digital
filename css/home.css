@@ -1,0 +1,674 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff6de;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1;
+    background: #080705;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 40px;
+    color: #f3c81a;
+    text-align: left;
+    padding-left: 20px;
+}
+
+h3 {
+    font-weight: 700;
+    color: #f3c81a;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #fff6de;
+    padding-left: 20px;
+    line-height: 1.7;
+}
+
+a {
+    font-family: "Poppins", sans-serif;
+    color: #080705;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff6de;
+    padding: 10px 5%;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+    margin: 0;
+    font-weight: 600;
+    flex-wrap: wrap;
+}
+
+nav a {
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.ativo {
+    border-bottom: 3px solid #f3c81a;
+}
+
+#logo {
+    width: 180px;
+    height: auto;
+}
+
+footer {
+    background: #080705;
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contatos a {
+    color: #ffffff;
+}
+
+.contatos-icon {
+    width: 20px;
+    margin-right: 5px;
+    margin-bottom: -5px;
+    display: inline-block;
+}
+
+main section {
+    background: #080705;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 30px;
+    padding: 80px 8%;
+}
+
+.intro-secao {
+    max-width: 700px;
+}
+
+main .sobre-axtra {
+    background: #080705;
+    padding: 80px 8%;
+}
+
+#sobre {
+    width: 100%;
+    text-align: left;
+}
+
+#yellowline {
+    width: 100px;
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+#megafone {
+    width: 400px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+/*Diferencial*/
+
+main section.diferencial {
+    background: #f3c81a;
+    color: #080705;
+    width: 100%;
+    min-height: auto;
+    gap: 10%;
+    padding: 100px 10%;
+}
+
+main section.diferencial #autenticidade {
+    width: 100%;
+    text-align: center;
+    background: #080705;
+    border-radius: 10px;
+    padding: 10%;
+    margin-bottom: 40px;
+}
+
+main section.diferencial h1 {
+    color: #fff6de;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(48px, 7vw, 100px);
+    text-align: center;
+}
+
+main section.diferencial p {
+    color: #fff6de;
+    font-size: clamp(16px, 2vw, 25px);
+}
+
+main section.diferencial li {
+    color: #080705;
+    font-size: clamp(16px, 2vw, 25px);
+    list-style: decimal;
+    margin-bottom: 12px;
+}
+
+main section.diferencial h2 {
+    color: #080705;
+    font-size: clamp(36px, 5vw, 80px);
+    margin-top: 0;
+}
+
+/*Pilares*/
+
+main section.pilares,
+main section.equipe {
+    min-height: auto;
+    display: block;
+    padding: 80px 8%;
+}
+
+.grid-pilares {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.pilar {
+    border: 2px solid #f3c81a;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.pilar h3 {
+    margin-top: 0;
+}
+
+.pilar p {
+    padding-left: 0;
+}
+
+main section.equipe {
+    background: #f3c81a;
+}
+
+main section.equipe h2,
+main section.equipe p {
+    color: #080705;
+}
+
+.grid-equipe {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 0 10%;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.membro {
+    background: #fff6de;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+}
+
+.membro img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+.membro img:hover {
+    transform: scale(1.06);
+}
+
+.membro h3 {
+    color: #080705;
+    margin: 16px 0 4px;
+}
+
+.membro p {
+    padding-left: 0;
+}
+
+.membro .cargo {
+    font-weight: 600;
+    margin: 0 0 12px;
+}
+
+
+main section.cta {
+    min-height: auto;
+    background: #fff6de;
+    padding: 80px 30px;
+    border-radius: 0 0 40px 40px;
+    display: block;
+    text-align: center;
+}
+
+main section.cta h2,
+main section.cta p {
+    color: #080705;
+}
+
+.cta-botao {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background: #080705;
+    color: #f3c81a;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 18px 36px;
+    border: 3px solid #080705;
+    border-radius: 50px;
+    transition: transform 0.3s ease,
+    background 0.3s ease, color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background: #f3c81a;
+    color: #080705;
+    transform: translateY(-4px);
+}
+
+/*Carrossel*/
+
+main section.secao-carrossel {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    display: block;
+    padding: 0;
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 7;
+    overflow: hidden;
+    background: #080705;
+    isolation: isolate;
+}
+
+#moldura {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    inset: 0;
+    margin: 0;
+}
+
+.carrossel-seta {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background: #f3c81a;
+    color: #080705;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    -webkit-appearance: none;
+    appearance: none;
+    touch-action: manipulation;
+}
+
+.carrossel-seta:hover {
+    background: #fff6de;
+}
+
+.carrossel-seta.anterior {
+    left: 25px;
+}
+
+.carrossel-seta.proximo {
+    right: 25px;
+}
+
+.carrossel-seta:focus-visible {
+    outline: 3px solid #fff6de;
+    outline-offset: 4px;
+}
+
+/* ========================================
+   LAPTOP
+   Até 1366px
+======================================== */
+
+@media (max-width: 1366px) {
+
+    main section {
+        padding: 70px 6%;
+    }
+
+    .grid-pilares {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grade-trabalhos,
+    .grade-feedbacks {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .carrossel {
+        aspect-ratio: 16 / 7;
+    }
+}
+
+/* ========================================
+   TABLET
+   Até 900px
+======================================== */
+
+@media (max-width: 900px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    #logo {
+        width: 150px;
+    }
+
+    main section {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 60px 6%;
+        gap: 30px;
+    }
+
+    .intro-secao {
+        max-width: 100%;
+    }
+
+    #megafone {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    main section.diferencial {
+        padding: 60px 7%;
+        gap: 35px;
+    }
+
+    main section.diferencial #autenticidade {
+        margin-bottom: 0;
+    }
+
+    main section.pilares,
+    main section.equipe,
+    main section.cta {
+        padding: 60px 5%;
+    }
+
+    .grid-pilares,
+    .grid-equipe {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    main section.trabalhos,
+    main section.feedbacks {
+        padding: 60px 6%;
+    }
+
+    .carrossel {
+        aspect-ratio: 16 / 9;
+    }
+
+    .carrossel-seta {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carrossel-seta.anterior {
+        left: 15px;
+    }
+
+    .carrossel-seta.proximo {
+        right: 15px;
+    }
+}
+
+/* ========================================
+   CELULAR
+   Até 600px
+======================================== */
+
+@media (max-width: 600px) {
+
+    nav {
+        gap: 10px;
+    }
+
+    nav ul {
+        gap: 10px 16px;
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    #logo {
+        width: 125px;
+    }
+
+    h2 {
+        font-size: 29px;
+        padding-left: 0;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+    p {
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    main section {
+        padding: 45px 20px;
+        gap: 25px;
+    }
+
+    main .sobre-axtra {
+        padding: 45px 20px;
+    }
+
+    #yellowline {
+        padding-left: 0;
+        margin: 15px 0;
+    }
+
+    #megafone {
+        max-width: 250px;
+    }
+
+    main section.diferencial {
+        padding: 45px 20px;
+    }
+
+    main section.diferencial h1 {
+        font-size: 45px;
+    }
+
+    main section.diferencial h2 {
+        font-size: 32px;
+    }
+
+    main section.diferencial p,
+    main section.diferencial li {
+        font-size: 16px;
+    }
+
+    main section.diferencial #autenticidade {
+        padding: 30px 20px;
+    }
+
+    main section.pilares,
+    main section.equipe,
+    main section.cta {
+        padding: 45px 20px;
+    }
+
+    .grid-pilares,
+    .grid-equipe {
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 18px;
+    }
+
+    .pilar {
+        padding: 25px;
+    }
+
+    .membro {
+        padding: 20px;
+    }
+
+    .membro img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .btn-whatsapp {
+        font-size: 15px;
+        padding: 15px 24px;
+    }
+
+    /* CARROSSEL NO CELULAR */
+
+    .carrossel {
+        aspect-ratio: 4 / 3;
+        width: 100%;
+    }
+
+    #moldura {
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .carrossel-seta {
+        width: 34px;
+        height: 34px;
+        font-size: 16px;
+    }
+
+    .carrossel-seta.anterior {
+        left: 8px;
+    }
+
+    .carrossel-seta.proximo {
+        right: 8px;
+    }
+}
+/* ========================================
+   CELULARES MUITO PEQUENOS
+   Até 380px
+======================================== */
+
+@media (max-width: 380px) {
+
+    nav ul {
+        gap: 8px 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .carrossel {
+        aspect-ratio: 1 / 1;
+    }
+
+    .carrossel-seta {
+        width: 30px;
+        height: 30px;
+    }
+
+    .feedback-card {
+        padding: 18px;
+    }
+}
